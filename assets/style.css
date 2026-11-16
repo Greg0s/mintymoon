@@ -178,11 +178,6 @@ a { color: inherit; }
   margin-left: .04em;
   color: var(--text);
 }
-.hero__kicker {
-  margin: 20px 0 0;
-  color: var(--text-dim);
-  font-size: clamp(15px, 1.6vw, 18px);
-}
 
 /* ---------- Portals ---------- */
 .portals {
