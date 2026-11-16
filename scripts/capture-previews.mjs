@@ -22,6 +22,8 @@ for (const site of SITES) {
     await page.getByText(site.dismiss).first().click({ timeout: 5000 }).catch(() => {});
   }
   await page.waitForTimeout(2000);
+  await page.evaluate(() => window.scrollTo(0, 0));
+  await page.waitForTimeout(500);
   await page.screenshot({ path: `assets/previews/${site.name}.jpg`, type: "jpeg", quality: 82 });
   console.log(`captured ${site.name}`);
   await page.close();
