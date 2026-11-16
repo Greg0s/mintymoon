@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="mintymoon">
+  <defs>
+    <linearGradient id="mm-g" x1="10" y1="8" x2="50" y2="58" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#C8FFE9"/>
+      <stop offset=".55" stop-color="#5EF0BE"/>
+      <stop offset="1" stop-color="#1FBF94"/>
+    </linearGradient>
+    <mask id="mm-m">
+      <rect width="64" height="64" fill="#fff"/>
+      <circle cx="42" cy="22" r="19" fill="#000"/>
+    </mask>
+  </defs>
+  <circle cx="30" cy="34" r="24" fill="url(#mm-g)" mask="url(#mm-m)"/>
+  <path d="M48 6c.9 4.6 2.4 6.1 7 7-4.6.9-6.1 2.4-7 7-.9-4.6-2.4-6.1-7-7 4.6-.9 6.1-2.4 7-7z" fill="#C9B8FF"/>
+</svg>
