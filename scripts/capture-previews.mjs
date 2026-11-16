@@ -4,7 +4,7 @@ import { chromium } from "playwright";
 
 const SITES = [
   { name: "whatweplay", url: "https://whatweplay.mintymoon.app/" },
-  { name: "lyrix", url: "https://lyrix.mintymoon.app/" },
+  { name: "lyrix", url: "https://lyrix.mintymoon.app/", dismiss: "Non merci" },
 ];
 
 const browser = await chromium.launch();
@@ -17,6 +17,10 @@ const context = await browser.newContext({
 for (const site of SITES) {
   const page = await context.newPage();
   await page.goto(site.url, { waitUntil: "networkidle", timeout: 60_000 });
+  if (site.dismiss) {
+    // Close the first-visit onboarding so the preview shows the game itself
+    await page.getByText(site.dismiss).first().click({ timeout: 5000 }).catch(() => {});
+  }
   await page.waitForTimeout(2000);
   await page.screenshot({ path: `assets/previews/${site.name}.jpg`, type: "jpeg", quality: 82 });
   console.log(`captured ${site.name}`);
