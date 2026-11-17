@@ -39,6 +39,10 @@
     toggle.querySelectorAll("[data-lang-opt]").forEach((el) => {
       el.classList.toggle("is-active", el.dataset.langOpt === lang);
     });
+    // Attach the current language to every tracked click
+    document.querySelectorAll("[data-umami-event]").forEach((el) => {
+      el.dataset.umamiEventLang = lang;
+    });
   }
 
   const fromUrl = new URLSearchParams(location.search).get("lang");
@@ -51,6 +55,8 @@
     lang = lang === "fr" ? "en" : "fr";
     save(lang);
     apply(lang);
+    // Umami only sends on mintymoon.app (data-domains), so this is a no-op locally
+    window.umami?.track("switch-language", { lang });
   });
 
   // Soft mint glow that follows the cursor on each card
