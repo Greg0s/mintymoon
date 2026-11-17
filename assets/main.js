@@ -7,7 +7,8 @@
       "lyrix.desc": "Le jeu de la chanson du jour. Les paroles sont cachées : proposez des mots pour les dévoiler et trouvez le titre. La même chanson pour tout le monde, en solo ou entre amis.",
       "wwp.cta": "Trouver un jeu",
       "lyrix.cta": "Jouer",
-      by: "Par",
+      "intro.hi": "Salut, moi c’est",
+      "intro.rest": ". Mintymoon, c’est là où mes idées prennent vie. Bonne exploration\u00A0!",
       toggleLabel: "Switch to English",
     },
     en: {
@@ -17,7 +18,8 @@
       "lyrix.desc": "The daily song game. The lyrics are hidden: suggest words to reveal them and find the title. Same song for everyone, solo or with friends. Songs are in French.",
       "wwp.cta": "Find a game",
       "lyrix.cta": "Play",
-      by: "By",
+      "intro.hi": "Hi, I’m",
+      "intro.rest": ". Mintymoon is where my ideas come to life. Have fun exploring!",
       toggleLabel: "Passer en français",
     },
   };
