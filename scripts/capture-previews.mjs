@@ -5,6 +5,7 @@ import { chromium } from "playwright";
 const SITES = [
   { name: "whatweplay", url: "https://whatweplay.mintymoon.app/" },
   { name: "lyrix", url: "https://lyrix.mintymoon.app/", dismiss: "Non merci" },
+  { name: "sncfwrapped", url: "https://sncfwrapped.mintymoon.app/" },
 ];
 
 const browser = await chromium.launch();
