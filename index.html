@@ -3,16 +3,60 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>mintymoon</title>
-  <meta name="description" content="mintymoon : What we play?, le catalogue de jeux à faire entre amis, Lyrix, le jeu de la chanson du jour, et SNCF Wrapped, le récap de vos trajets en train.">
+  <title>mintymoon · Jeux entre amis, chanson du jour et récap SNCF</title>
+  <meta name="description" content="Trouvez un jeu à faire entre amis avec What we play?, devinez la chanson du jour avec Lyrix et revivez vos trajets en train avec SNCF Wrapped. Gratuit.">
+  <meta name="author" content="Greg">
   <meta name="theme-color" content="#070A1A">
   <meta name="color-scheme" content="dark">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="canonical" href="https://mintymoon.app/">
+
+  <!-- Icons: .ico + 48px multiples for Google Search, SVG for modern browsers -->
+  <link rel="icon" href="/favicon.ico" sizes="48x48">
+  <link rel="icon" href="/assets/icons/favicon-96.png" type="image/png" sizes="96x96">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+
+  <!-- Social previews -->
   <meta property="og:type" content="website">
-  <meta property="og:title" content="mintymoon">
-  <meta property="og:description" content="What we play?, Lyrix et SNCF Wrapped, les sites mintymoon.">
+  <meta property="og:site_name" content="mintymoon">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta property="og:title" content="mintymoon · Jeux entre amis, chanson du jour et récap SNCF">
+  <meta property="og:description" content="What we play?, Lyrix et SNCF Wrapped : les petits sites de Greg, gratuits et faits avec amour.">
   <meta property="og:url" content="https://mintymoon.app/">
+  <meta property="og:image" content="https://mintymoon.app/assets/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Logo mintymoon : un croissant de lune menthe sur un ciel étoilé">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Structured data: site name + logo for Google -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://mintymoon.app/#website",
+        "name": "mintymoon",
+        "alternateName": ["Mintymoon", "mintymoon.app"],
+        "url": "https://mintymoon.app/",
+        "inLanguage": ["fr", "en"],
+        "publisher": { "@id": "https://mintymoon.app/#org" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://mintymoon.app/#org",
+        "name": "mintymoon",
+        "url": "https://mintymoon.app/",
+        "logo": "https://mintymoon.app/assets/icons/icon-512.png",
+        "founder": { "@type": "Person", "name": "Greg", "url": "https://gregoiretinn.es/" }
+      }
+    ]
+  }
+  </script>
+
   <link rel="preload" href="assets/fonts/unbounded.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/instrument-serif-italic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="assets/style.css">
